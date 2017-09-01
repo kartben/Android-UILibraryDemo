@@ -173,7 +173,7 @@ public class DemoApplication extends Application {
         private JSONObject createMessagePayload()
                 throws JSONException {
             JSONObject messagePayload = new JSONObject();
-            if (getProductInstance() != null) {
+            if (getProductInstance() != null && getProductInstance().getModel() != null) {
                 messagePayload.put("model", getProductInstance().getModel().getDisplayName());
                 if (getProductInstance() instanceof Aircraft && getProductInstance().isConnected()) {
                     Aircraft aircraft = (Aircraft) getProductInstance();
