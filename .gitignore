@@ -1,9 +1,11 @@
 *.iml
-.gradle
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
 .DS_Store
-/build
-/captures
+# Gradle files
+.gradle/
+build/
+# Android Studio captures folder
+captures/
 .externalNativeBuild
